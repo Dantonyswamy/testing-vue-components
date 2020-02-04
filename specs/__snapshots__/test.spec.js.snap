@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListComponent 1`] = `
+<div>
+  <ul>
+    <li><strong>Iron Man</strong></li>
+    <li><strong>Avengers</strong></li>
+    <li><strong>Infitinity War</strong></li>
+  </ul>
+</div>
+`;
+
+exports[`ListComponent 2`] = `
+<div>
+  <ul>
+    <li><strong>Iron Man</strong></li>
+    <li><strong>Avengers</strong></li>
+    <li><strong>Infitinity War</strong></li>
+    <li><strong>EndGame</strong></li>
+  </ul>
+</div>
+`;
+
+exports[`mount a vue component 1`] = `
+<div>
+  <h1>Hello Vue-Jest</h1>
+</div>
+`;
