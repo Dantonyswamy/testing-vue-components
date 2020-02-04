@@ -7,14 +7,15 @@ test('mount a vue component', () => {
         value:'Vue-Jest'
     }
 })
-    expect(wrapper.html()).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot()
 })
 
 test('ListComponent', () =>{
     const wrapper = mount(List)
     const movies = wrapper.vm.marvelMovies
     wrapper.setData({marvelMovies:[...movies,'EndGame']})
-    expect(wrapper.html()).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot()
+    // added below to get updated snapshot list as per comment on the video tutorial
     const vm =wrapper.vm
     vm.$nextTick(()=>{
         expect(wrapper).toMatchSnapshot();
